@@ -63,6 +63,27 @@ Use the following command to initialize a new empty project called "hello-world"
 ```
 $ docker app init --single-file hello-world
 Created "hello-world.dockerapp"
+This options doesn't work in docker  version
+ Engine:
+  Version:          20.10.6
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.13.15
+  Git commit:       8728dd2
+  Built:            Fri Apr  9 22:44:56 2021
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.4.4
+  GitCommit:        05f951a3781f4f2c1911b05e61c160e9c30eaa8e
+ runc:
+  Version:          1.0.0-rc93
+  GitCommit:        12644e614e25b05da6fd08a38ffa0cfe1903fdec
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+Gives error:
+user@docker:#unknown flag: --single-file
+
 ```
 
 The command produces a single file in your current directory called `hello-world.dockerapp`. 
